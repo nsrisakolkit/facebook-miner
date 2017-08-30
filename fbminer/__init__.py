@@ -1,1 +1,1 @@
-from pagescrapper import FacebookAPI
+from fbminer.pagescrapper import FacebookAPI
