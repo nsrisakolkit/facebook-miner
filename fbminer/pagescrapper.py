@@ -45,4 +45,5 @@ class FacebookAPI:
                                                  shares_count, comments_count]),
                                 columns=['page_id', 'page_name', 'post_id', 'message', 'post_time', 'likes_count',
                                          'shares_count', 'comments_count'])
+        df_posts['post_time'] = pd.to_datetime(df_posts['post_time'], format='%Y-%m-%d %H:%M:%S')
         return df_posts
