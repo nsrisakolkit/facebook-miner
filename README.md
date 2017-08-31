@@ -22,8 +22,8 @@ posts = facebook_api.get_posts(pages=['DramaAdd', 'ejeab'], limit=100)
 posts = facebook_api.get_posts(pages='DramaAdd', limit=100)
 ```
 
-Use function .get_post_comments to get comments in specific posts. Set the argument 'posts' equals to post ID or list of post ID The limit is maximum recent comments (default is all comments). This function doesn't return the sub-comments. The result is also in data  frame format.
+Use function .get_post_comments to get comments in specific posts. Set the argument 'posts' equals to post ID or list of post ID The limit is maximum recent comments (default or None mean get all comments). This function doesn't return the sub-comments. The result is also in data  frame format.
 ```python
-comments = facebook_api.get_post_comments(['141108613290_10155828741308291', '1544278182503962_1930411163890660'])
+comments = facebook_api.get_post_comments(post_ids=['141108613290_10155828741308291', '1544278182503962_1930411163890660'], limit=None)
 ```
 
